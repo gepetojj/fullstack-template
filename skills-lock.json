@@ -19,6 +19,30 @@
 			"skillPath": ".agents/skills/impeccable/SKILL.md",
 			"computedHash": "9871013bd36b754dbf0cbe77e8dc6180fded5323d489864efddc69c56764e5ff"
 		},
+		"safe-action-forms": {
+			"source": "next-safe-action/skills",
+			"sourceType": "github",
+			"skillPath": "skills/safe-action-forms/SKILL.md",
+			"computedHash": "5fc284fff83c74ecef99dd33c7cb5e8c242e093205f95f27c734e2555654f97d"
+		},
+		"safe-action-hooks": {
+			"source": "next-safe-action/skills",
+			"sourceType": "github",
+			"skillPath": "skills/safe-action-hooks/SKILL.md",
+			"computedHash": "eeb4f746b4ba32429e90639d57717f6b8f483a9bbcfcecf78533ef6fd0a2ee9a"
+		},
+		"safe-action-tanstack-query": {
+			"source": "next-safe-action/skills",
+			"sourceType": "github",
+			"skillPath": "skills/safe-action-tanstack-query/SKILL.md",
+			"computedHash": "e2e9518205cf70b4ae64d1c55daa3c8e236b11443bd2f88f0bff56d48708d9eb"
+		},
+		"safe-action-validation-errors": {
+			"source": "next-safe-action/skills",
+			"sourceType": "github",
+			"skillPath": "skills/safe-action-validation-errors/SKILL.md",
+			"computedHash": "051c07243cef1761f1ebaa77944d936e7cb7f61d1747fec5e7e955c0e9f54168"
+		},
 		"subagent-driven-development": {
 			"source": "obra/superpowers",
 			"sourceType": "github",
