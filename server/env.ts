@@ -10,5 +10,7 @@ import { z } from "zod/v4-mini";
 export const env = z
 	.object({
 		DATABASE_URL: z.url(),
+		BETTER_AUTH_SECRET: z.string(),
+		NEXT_PUBLIC_BETTER_AUTH_URL: z.url(),
 	})
 	.parse(process.env);
