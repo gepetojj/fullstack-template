@@ -87,10 +87,7 @@
 			}
 		},
 		{
-			"includes": [
-				"app/components/ui/**",
-				"app/components/ai-elements/**"
-			],
+			"includes": ["components/ui/**", "components/ai-elements/**"],
 			"linter": {
 				"rules": {
 					"performance": {
@@ -103,7 +100,8 @@
 						"useSemanticElements": "off",
 						"useAriaPropsForRole": "off",
 						"useFocusableInteractive": "off",
-						"useKeyWithClickEvents": "off"
+						"useKeyWithClickEvents": "off",
+						"noLabelWithoutControl": "off"
 					}
 				}
 			}

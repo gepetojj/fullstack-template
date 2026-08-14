@@ -1,18 +1,19 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
+import { Inter, Merriweather } from "next/font/google";
 
 import "./globals.css";
+
 import { QueryProvider } from "@/components/context/query-provider";
+import { Toaster } from "@/components/ui/toast";
+import { TooltipProvider } from "@/components/ui/tooltip";
+import { cn } from "@/lib/utils";
 
-const geistSans = Geist({
-	variable: "--font-geist-sans",
+const merriweatherHeading = Merriweather({
 	subsets: ["latin"],
+	variable: "--font-heading",
 });
 
-const geistMono = Geist_Mono({
-	variable: "--font-geist-mono",
-	subsets: ["latin"],
-});
+const inter = Inter({ subsets: ["latin"], variable: "--font-sans" });
 
 export const metadata: Metadata = {
 	title: "Fullstack Template",
@@ -23,10 +24,19 @@ export default function Layout({ children }: LayoutProps<"/">) {
 	return (
 		<html
 			lang="pt-BR"
-			className={`${geistSans.variable} ${geistMono.variable} h-full antialiased`}
+			className={cn(
+				"h-full font-sans antialiased",
+				inter.variable,
+				merriweatherHeading.variable,
+			)}
 		>
 			<body className="flex min-h-full flex-col">
-				<QueryProvider>{children}</QueryProvider>
+				<QueryProvider>
+					<TooltipProvider>
+						{children}
+						<Toaster />
+					</TooltipProvider>
+				</QueryProvider>
 			</body>
 		</html>
 	);
