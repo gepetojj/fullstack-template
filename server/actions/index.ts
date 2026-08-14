@@ -10,3 +10,5 @@ export const actionClient = createSafeActionClient({
 		return error.message || "Ocorreu um erro ao processar a ação.";
 	},
 });
+
+// TODO: Criar client autenticado para actions
