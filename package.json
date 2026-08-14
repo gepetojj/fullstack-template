@@ -1,0 +1,36 @@
+{
+	"name": "fullstack-template",
+	"author": "João Pedro <contato@gepetojj.com>",
+	"version": "0.1.0",
+	"private": true,
+	"packageManager": "pnpm@11.21.0",
+	"scripts": {
+		"dev": "next dev",
+		"build": "next build",
+		"start": "next start",
+		"lint": "biome check --unsafe --fix",
+		"format": "biome format --write",
+		"commit": "git cz"
+	},
+	"dependencies": {
+		"next": "16.3.1",
+		"react": "19.2.8",
+		"react-dom": "19.2.8"
+	},
+	"devDependencies": {
+		"@biomejs/biome": "2.5.8",
+		"@tailwindcss/postcss": "^4.3.3",
+		"@types/node": "^26.2.0",
+		"@types/react": "^19.2.18",
+		"@types/react-dom": "^19.2.4",
+		"commitizen": "^4.3.2",
+		"cz-conventional-changelog": "^3.3.0",
+		"tailwindcss": "^4.3.3",
+		"typescript": "6.0.3"
+	},
+	"config": {
+		"commitizen": {
+			"path": "./node_modules/cz-conventional-changelog"
+		}
+	}
+}
