@@ -1,5 +1,9 @@
+import { betterAuth } from "@next-safe-action/adapter-better-auth";
+import { redirect } from "next/navigation";
 import { createSafeActionClient } from "next-safe-action";
 import { ZodError } from "zod";
+
+import { auth } from "@/server/auth";
 
 export const actionClient = createSafeActionClient({
 	handleServerError: (error) => {
@@ -11,4 +15,11 @@ export const actionClient = createSafeActionClient({
 	},
 });
 
-// TODO: Criar client autenticado para actions
+export const authClient = actionClient.use(
+	betterAuth(auth, {
+		authorize: ({ authData, next }) => {
+			if (!authData) redirect("/login");
+			return next({ ctx: { auth: authData } });
+		},
+	}),
+);

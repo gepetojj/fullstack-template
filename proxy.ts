@@ -20,7 +20,13 @@ export async function proxy(request: NextRequest) {
 		headers: await headers(),
 	});
 	if (!session) {
-		return NextResponse.redirect(new URL("/login", request.url));
+		const loginUrl = new URL("/login", request.url);
+		const error = request.nextUrl.searchParams.get("error");
+		if (error) {
+			loginUrl.searchParams.set("error", error);
+		}
+
+		return NextResponse.redirect(loginUrl);
 	}
 
 	return NextResponse.next();

@@ -6,4 +6,13 @@ export const authClient = createAuthClient({
 	plugins: [lastLoginMethodClient(), adminClient()],
 });
 
-export const { signIn, signUp, useSession } = createAuthClient();
+export const { signIn, signUp, sendVerificationEmail, useSession } = authClient;
+
+export function getAuthCallbackURL(path: `/${string}` = "/") {
+	const origin =
+		typeof window !== "undefined"
+			? window.location.origin
+			: process.env.NEXT_PUBLIC_BETTER_AUTH_URL;
+
+	return `${origin}${path}`;
+}

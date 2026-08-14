@@ -29,6 +29,22 @@ export const auth = betterAuth({
 					`[better-auth] Usuário '${user.email}' solicitou reset de senha. URL: ${url}`,
 				);
 			}),
+		onExistingUserSignUp: async ({ user }) =>
+			after(async () => {
+				// TODO: Notificar o dono do email sobre a tentativa de cadastro
+				console.log(
+					`[better-auth] Tentativa de cadastro com email já registrado: '${user.email}'`,
+				);
+			}),
+		customSyntheticUser: ({ coreFields, additionalFields, id }) => ({
+			...coreFields,
+			role: "user",
+			banned: false,
+			banReason: null,
+			banExpires: null,
+			...additionalFields,
+			id,
+		}),
 	},
 	emailVerification: {
 		sendOnSignUp: true,
@@ -51,7 +67,10 @@ export const auth = betterAuth({
 	plugins: [
 		lastLoginMethod(),
 		admin(),
-		haveIBeenPwned(),
+		haveIBeenPwned({
+			customPasswordCompromisedMessage:
+				"Esta senha já apareceu em vazamentos de dados. Escolha outra mais segura.",
+		}),
 		nextCookies(), // ! Sempre mantenha como último plugin da lista
 	],
 	user: {
