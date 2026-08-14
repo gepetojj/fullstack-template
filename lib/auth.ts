@@ -6,7 +6,14 @@ export const authClient = createAuthClient({
 	plugins: [lastLoginMethodClient(), adminClient()],
 });
 
-export const { signIn, signUp, sendVerificationEmail, useSession } = authClient;
+export const {
+	signIn,
+	signUp,
+	sendVerificationEmail,
+	requestPasswordReset,
+	resetPassword,
+	useSession,
+} = authClient;
 
 export function getAuthCallbackURL(path: `/${string}` = "/") {
 	const origin =

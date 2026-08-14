@@ -29,6 +29,12 @@ export const auth = betterAuth({
 					`[better-auth] Usuário '${user.email}' solicitou reset de senha. URL: ${url}`,
 				);
 			}),
+		onPasswordReset: async ({ user }) =>
+			after(async () => {
+				console.log(
+					`[better-auth] Senha redefinida para '${user.email}'`,
+				);
+			}),
 		onExistingUserSignUp: async ({ user }) =>
 			after(async () => {
 				// TODO: Notificar o dono do email sobre a tentativa de cadastro
