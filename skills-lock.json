@@ -5,7 +5,7 @@
 			"source": "better-auth/skills",
 			"sourceType": "github",
 			"skillPath": "better-auth/best-practices/SKILL.md",
-			"computedHash": "61ba0ef64ed2e7c424401cc848ca33dd6d790a720c44727717dc0c5cba5fc122"
+			"computedHash": "0c30be0e118c2b7a0c4c57bd9e63bf110c7e420a79ec6ce7997153f3b1e066ee"
 		},
 		"better-auth-security-best-practices": {
 			"source": "better-auth/skills",
@@ -17,13 +17,13 @@
 			"source": "obra/superpowers",
 			"sourceType": "github",
 			"skillPath": "skills/brainstorming/SKILL.md",
-			"computedHash": "b58d55b64742ecd37923985ec7bdfbe678ffbcb9895562abd28c0a32dcacd7fb"
+			"computedHash": "b95dc657c5dd79caf7340ee6dead6faf2ce2d1cc613352a027fa8993966b41b7"
 		},
 		"email-and-password-best-practices": {
 			"source": "better-auth/skills",
 			"sourceType": "github",
 			"skillPath": "better-auth/emailAndPassword/SKILL.md",
-			"computedHash": "747d7f73bd9e2ec5317b8ef88dc70f97df716d00e3d02de4051feebaa48b062d"
+			"computedHash": "863886759f729081e265941f4f72c503835d55a1f34f6d63cebe6571159fff4a"
 		},
 		"hooked-ux": {
 			"source": "wondelai/skills",
@@ -41,25 +41,25 @@
 			"source": "better-auth/skills",
 			"sourceType": "github",
 			"skillPath": "better-auth/organization/SKILL.md",
-			"computedHash": "27627eb3a13bd44eff3a5d890f96e7db052b623db90e01684f759abe3e7fe56b"
+			"computedHash": "8c85e683dabef4532f1e8b67bbed5c453d39e0e3d5aeedd69d16b568f6e6d44f"
 		},
 		"safe-action-forms": {
 			"source": "next-safe-action/skills",
 			"sourceType": "github",
 			"skillPath": "skills/safe-action-forms/SKILL.md",
-			"computedHash": "5fc284fff83c74ecef99dd33c7cb5e8c242e093205f95f27c734e2555654f97d"
+			"computedHash": "8d4436e7b02954fa7d407f9032c1d08232f909abbf81316c9b2ba79771fde194"
 		},
 		"safe-action-hooks": {
 			"source": "next-safe-action/skills",
 			"sourceType": "github",
 			"skillPath": "skills/safe-action-hooks/SKILL.md",
-			"computedHash": "eeb4f746b4ba32429e90639d57717f6b8f483a9bbcfcecf78533ef6fd0a2ee9a"
+			"computedHash": "1875ac6f612307c716ba3f55ef71932288c06aa8566f14f35ebad1d19ee9f124"
 		},
 		"safe-action-tanstack-query": {
 			"source": "next-safe-action/skills",
 			"sourceType": "github",
 			"skillPath": "skills/safe-action-tanstack-query/SKILL.md",
-			"computedHash": "e2e9518205cf70b4ae64d1c55daa3c8e236b11443bd2f88f0bff56d48708d9eb"
+			"computedHash": "cb219adc5c778856a675e920d793e289c1360d2d0513718329e103a23f5fae04"
 		},
 		"safe-action-validation-errors": {
 			"source": "next-safe-action/skills",
@@ -71,19 +71,19 @@
 			"source": "obra/superpowers",
 			"sourceType": "github",
 			"skillPath": "skills/subagent-driven-development/SKILL.md",
-			"computedHash": "367cc1d3216d6672b947c8c6583dbd6440ea407beb6da75a97d3a8ee1a23640a"
+			"computedHash": "d5caecf77dad1d6b86be893ce3fdeb0222921c64bb955db8b12a5780eecb4ec6"
 		},
 		"test-driven-development": {
 			"source": "obra/superpowers",
 			"sourceType": "github",
 			"skillPath": "skills/test-driven-development/SKILL.md",
-			"computedHash": "a4126a9c5f17be3c228aa9e5755898ade283448b86099f56f40852e8c14532be"
+			"computedHash": "3cfe4ebb6fa7288f668d87880d279c8e48f7a92b63415e296857060f5ce22e05"
 		},
 		"two-factor-authentication-best-practices": {
 			"source": "better-auth/skills",
 			"sourceType": "github",
 			"skillPath": "better-auth/twoFactor/SKILL.md",
-			"computedHash": "a6f720042e5a090909e0d519a6a50a7eb8179553cd5315f0bbad852a6d20dac8"
+			"computedHash": "5bc3051aef5060db013f0b3cbe812c40dbae5c22d6ba3ddde4b941158362a197"
 		},
 		"ux-heuristics": {
 			"source": "wondelai/skills",
@@ -95,7 +95,7 @@
 			"source": "vercel/workflow",
 			"sourceType": "github",
 			"skillPath": "skills/workflow/SKILL.md",
-			"computedHash": "eae859f624c59eeb67ddb91e8f1bc85793f463bc3ff4c854cb53dd3a72fd01a5"
+			"computedHash": "f9dff4d4dbd9a4333207c5e3cfa143cf1d9a320dc509800bbc328349e658c69e"
 		}
 	}
 }
